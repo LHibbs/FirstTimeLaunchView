@@ -13,11 +13,27 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var rootNavController : UIViewController?
+
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        // Override point for customization after application launch
+        
+        
+        let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)// fetch main storyboard
+        rootNavController = mainStoryboard.instantiateInitialViewController()//instantiate root nav controller
+        
+         window?.rootViewController = rootNavController
+        
+        
         return true
+    }
+    
+    func applicationDidFinishLaunching(application: UIApplication) {
+        if !NSUserDefaults.standardUserDefaults().boolForKey("FirsLaunch") {
+            NSUserDefaults.standardUserDefaults().setBool(false, forKey: "FirstLaunch")
+        }
     }
 
     func applicationWillResignActive(application: UIApplication) {

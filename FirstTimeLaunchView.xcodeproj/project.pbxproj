@@ -13,6 +13,7 @@
 		78A13C861CB59A670034001D /* FirstTimeLaunchView.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 78A13C841CB59A670034001D /* FirstTimeLaunchView.xcdatamodeld */; };
 		78A13C881CB59A670034001D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78A13C871CB59A670034001D /* Assets.xcassets */; };
 		78A13C8B1CB59A670034001D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78A13C891CB59A670034001D /* LaunchScreen.storyboard */; };
+		78A13C931CB6DA1F0034001D /* TutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A13C921CB6DA1F0034001D /* TutorialView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		78A13C871CB59A670034001D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		78A13C8A1CB59A670034001D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		78A13C8C1CB59A670034001D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78A13C921CB6DA1F0034001D /* TutorialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				78A13C891CB59A670034001D /* LaunchScreen.storyboard */,
 				78A13C8C1CB59A670034001D /* Info.plist */,
 				78A13C841CB59A670034001D /* FirstTimeLaunchView.xcdatamodeld */,
+				78A13C921CB6DA1F0034001D /* TutorialView.swift */,
 			);
 			path = FirstTimeLaunchView;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78A13C931CB6DA1F0034001D /* TutorialView.swift in Sources */,
 				78A13C801CB59A670034001D /* ViewController.swift in Sources */,
 				78A13C861CB59A670034001D /* FirstTimeLaunchView.xcdatamodeld in Sources */,
 				78A13C7E1CB59A670034001D /* AppDelegate.swift in Sources */,
@@ -289,6 +293,7 @@
 				78A13C911CB59A670034001D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
