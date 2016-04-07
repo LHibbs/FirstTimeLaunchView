@@ -24,12 +24,30 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Just click some buttons to do stuff!" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yRj-l2-Rqc">
+                                <rect key="frame" x="81" y="238" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yoS-pO-mLi">
+                                <rect key="frame" x="277" y="285" width="46" height="30"/>
+                                <state key="normal" title="Got it"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="Dyd-cg-6yJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="yRj-l2-Rqc" firstAttribute="top" secondItem="mMk-fI-yAD" secondAttribute="bottom" constant="50" id="6Gz-Nf-DDA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yRj-l2-Rqc" secondAttribute="trailing" constant="20" id="HVW-Yp-wc0"/>
+                            <constraint firstItem="yoS-pO-mLi" firstAttribute="centerX" secondItem="aTx-TC-S4b" secondAttribute="centerX" id="Ib2-zn-mRa"/>
+                            <constraint firstItem="yRj-l2-Rqc" firstAttribute="leading" secondItem="aTx-TC-S4b" secondAttribute="leadingMargin" constant="20" id="LqZ-58-2XV"/>
                             <constraint firstAttribute="trailingMargin" secondItem="mMk-fI-yAD" secondAttribute="trailing" constant="20" id="Qmt-cI-TXC"/>
                             <constraint firstItem="mMk-fI-yAD" firstAttribute="leading" secondItem="aTx-TC-S4b" secondAttribute="leadingMargin" constant="20" id="XkB-VW-U09"/>
-                            <constraint firstItem="mMk-fI-yAD" firstAttribute="top" secondItem="gbb-Po-dHQ" secondAttribute="bottom" constant="123" id="r4Z-GR-kwC"/>
+                            <constraint firstItem="yoS-pO-mLi" firstAttribute="centerY" secondItem="aTx-TC-S4b" secondAttribute="centerY" id="c71-L5-Z02"/>
+                            <constraint firstItem="mMk-fI-yAD" firstAttribute="top" secondItem="gbb-Po-dHQ" secondAttribute="bottom" constant="80" id="ozx-XW-9lv"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -55,18 +73,25 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="sF2-BF-aK9">
+                                <rect key="frame" x="183" y="285" width="235" height="30"/>
+                                <state key="normal" title="Show me the tutorial again!"/>
+                                <connections>
+                                    <segue destination="EbH-H9-s8d" kind="presentation" identifier="FirstTimeView" id="VE5-75-TEY"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="odS-QR-Xco" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="71" id="44v-Jf-ugs"/>
+                            <constraint firstItem="sF2-BF-aK9" firstAttribute="top" secondItem="odS-QR-Xco" secondAttribute="bottom" constant="59" id="FyL-md-AyG"/>
+                            <constraint firstItem="sF2-BF-aK9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="M49-PT-FBj"/>
                             <constraint firstItem="odS-QR-Xco" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="WFy-p7-HZ0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sF2-BF-aK9" secondAttribute="trailing" constant="50" id="cpC-nb-7t3"/>
                             <constraint firstAttribute="trailingMargin" secondItem="odS-QR-Xco" secondAttribute="trailing" constant="20" id="hWM-kz-8K0"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="SRY-16-QSD"/>
-                    <connections>
-                        <segue destination="EbH-H9-s8d" kind="presentation" identifier="FirstTimeView" id="m9D-Ca-mJK"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -91,4 +116,7 @@
             <point key="canvasLocation" x="-188" y="325"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Dyd-cg-6yJ"/>
+    </inferredMetricsTieBreakers>
 </document>
